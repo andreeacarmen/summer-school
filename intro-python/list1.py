@@ -38,8 +38,19 @@ def match_ends(words):
 # Hint: this can be done by making 2 lists and sorting each of them
 # before combining them.
 def front_x(words):
-  # +++your code here+++
-  return
+    n=len(words)
+    l1=[]
+    l2=[]
+    for i in range(n):
+        sir=words[i]
+        if sir[0]=="x":
+            l1.append(sir)
+        else:
+            l2.append(sir)
+    l1.sort()
+    l2.sort()
+    l=l1 + l2
+    return l
 
 
 
